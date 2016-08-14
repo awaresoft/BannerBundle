@@ -4,7 +4,7 @@ namespace Awaresoft\BannerBundle\DataFixtures\ORM;
 
 use Awaresoft\Doctrine\Common\DataFixtures\AbstractFixture as AwaresoftAbstractFixture;
 use Awaresoft\BannerBundle\Entity\Banner;
-use Awaresoft\SettingBundle\Entity\SettingHasFields;
+use Awaresoft\SettingBundle\Entity\SettingHasField;
 use Doctrine\Common\Persistence\ObjectManager;
 use Application\UserBundle\Entity\Setting;
 
@@ -49,7 +49,7 @@ class LoadBannerData extends AwaresoftAbstractFixture
             ->setInfo('Banner global parameters.');
         $manager->persist($setting);
 
-        $settingField = new SettingHasFields();
+        $settingField = new SettingHasField();
         $settingField->setSetting($setting);
         $settingField->setName('MAX_DEPTH');
         $settingField->setValue('1');
