@@ -1,0 +1,8 @@
+banner:
+    admin:
+        help:
+            title: Title will be most visible text at banner.
+            description: Description will be visible under the title.
+            media_info: Check remove field, if you want to delete this media. Banner size should be equal to (overwrite)x(overwrite)px.
+        menu:
+            banner: Banner

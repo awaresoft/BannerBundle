@@ -1,0 +1,9 @@
+services:
+    awaresoft.banner.block.banner:
+        class: Awaresoft\BannerBundle\Block\BannerBlock
+        tags:
+            - { name: sonata.block }
+        arguments:
+            - Banner
+            - "@templating"
+            - "@service_container"

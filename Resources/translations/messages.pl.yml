@@ -1,0 +1,8 @@
+banner:
+    admin:
+        help:
+            title: Tyuł będzie najbardziej widocznym tekstem na bannerze.
+            description: Opis będzie widoczny pod tytułem bannera.
+            media_info: Zaznacz pole "usuń", jeżeli chcesz odłączyć ten obraz od aktualnego bannera. Rozmiar zdjęcia powinien być: (overwrite)x(overwrite)px.
+        menu:
+            banner: Banner

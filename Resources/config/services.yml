@@ -1,0 +1,12 @@
+services:
+    awaresoft.banner.admin.banner:
+        class: Awaresoft\BannerBundle\Admin\BannerAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: admin.admin.menu_group_content, label: banner.admin.menu.banner }
+        arguments:
+            - null
+            - Application\BannerBundle\Entity\Banner
+            - AwaresoftBannerBundle:BannerCRUD
+            - "@service_container"
+        calls:
+            - [setTemplate, [tree, AwaresoftBannerBundle:CRUD:tree.html.twig]]

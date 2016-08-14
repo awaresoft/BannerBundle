@@ -1,0 +1,21 @@
+{% extends sonata_block.templates.block_base %}
+
+{% block block %}
+    {% if (banners | length > 0) %}
+        <section id="banner">
+            <ul>
+                {% for banner in banners %}
+                    <li style="background-color: {{ banner.bgColor }};" {% if banner.class is defined and banner.class is not empty %}class="{{ banner.class }}"{% endif %}>
+                        <h1 style="color:{{ banner.textColor }}">{{ banner.title }}</h1>
+                        <p>
+                            {{ banner.description | raw }}
+                        </p>
+                        <a href="{{ banner.url }}">
+                            {{ 'See_more' | trans }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    {% endif %}
+{% endblock %}
