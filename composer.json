@@ -1,5 +1,5 @@
 {
-    "name": "awaresoft/BannerBundle",
+    "name": "awaresoft/banner-bundle",
     "type": "symfony-bundle",
     "description": "Symfony Awaresoft BannerBundle with Sonata libraries",
     "require": {
